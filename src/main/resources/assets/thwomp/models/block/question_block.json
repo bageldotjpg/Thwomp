@@ -1,0 +1,8 @@
+{
+    "parent": "block/cube_bottom_top",
+    "textures": {
+        "top": "thwomp:block/question_block_top",
+        "bottom": "thwomp:block/question_block_bottom",
+        "side": "thwomp:block/question_block"
+    }
+}

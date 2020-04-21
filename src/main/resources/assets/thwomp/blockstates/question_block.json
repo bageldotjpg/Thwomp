@@ -1,0 +1,5 @@
+{
+    "variants": {
+        "":    { "model": "thwomp:block/question_block" }
+    }
+}
