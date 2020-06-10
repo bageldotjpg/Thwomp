@@ -1,7 +1,6 @@
 package com.bagel.thwomp.core;
 
 import com.bagel.thwomp.core.registry.ThwompBlocks;
-import com.bagel.thwomp.core.registry.ThwompData;
 import com.bagel.thwomp.core.registry.ThwompItems;
 
 import net.minecraftforge.api.distmarker.Dist;
@@ -14,8 +13,8 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
-@Mod("thwomp")
-@EventBusSubscriber(modid = "thwomp")
+@Mod(Thwomp.MODID)
+@EventBusSubscriber(modid = Thwomp.MODID)
 public class Thwomp
 {
 	public static final String MODID = "thwomp";
@@ -34,13 +33,9 @@ public class Thwomp
     }
     
     private void setupClient(final FMLClientSetupEvent event) {
-    	ThwompData.registerRenderLayers();
 	}
     
-    private void setup(final FMLCommonSetupEvent event)
-    {
-    	ThwompData.registerCompostables();
-    	ThwompData.registerFlammables();
+    private void setup(final FMLCommonSetupEvent event) {
     }
 
     

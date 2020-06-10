@@ -18,12 +18,6 @@ public class RegistryUtils {
 		return item;
 	}
 	
-//	public static RegistryObject<Item> createSpawnEggItem(String entityName, Supplier<EntityType<?>> supplier, int primaryColor, int secondaryColor) {
-//		RegistryObject<Item> spawnEgg = ThwompItems.ITEMS.register(entityName + "_spawn_egg", () -> new ThwompSpawnEggItem(supplier, primaryColor, secondaryColor, new Item.Properties().group(ItemGroup.MISC)));
-//		ThwompItems.SPAWN_EGGS.add(spawnEgg);
-//		return spawnEgg;
-//	}
-	
 	public static BlockItem createSimpleItemBlock(Block block, ItemGroup itemGroup) {
         return (BlockItem) new BlockItem(block, new Item.Properties().group(itemGroup)).setRegistryName(block.getRegistryName());
     }
