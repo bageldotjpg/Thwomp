@@ -17,7 +17,7 @@ import net.minecraftforge.fml.common.Mod;
 public class ThwompEntities {
 	public static final RegistryHelper HELPER = Thwomp.REGISTRY_HELPER;
 
-	public static final RegistryObject<EntityType<ShyGuyEntity>> SHY_GUY = HELPER.createLivingEntity("shy_guy", ShyGuyEntity::new, EntityClassification.CREATURE, 0.6F, 0.6F);
+	public static final RegistryObject<EntityType<ShyGuyEntity>> SHY_GUY = HELPER.createLivingEntity("shy_guy", ShyGuyEntity::new, EntityClassification.CREATURE, 0.5F, 1.2F);
 
 	public static void registerRendering() {
 		RenderingRegistry.registerEntityRenderingHandler(SHY_GUY.get(), ShyGuyRenderer::new);
